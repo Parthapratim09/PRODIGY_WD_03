@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,11 @@
 <body>
   <div class="game-main-container">
     <h1>Tic-Tac-Toe</h1>
-    <div id="gameboard">
+    <div id="mode-selection">
+      <button id="two-player-mode">Two Player</button>
+      <button id="ai-mode">Play Against AI</button>
+    </div>
+    <div id="gameboard" class="hide">
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
@@ -21,7 +26,7 @@
       <div class="cell" data-cell></div>
     </div>
     <h2 id="winning-message" class="hide">
-      <span id="winner"></span>...
+      <span id="winner"></span>
     </h2>
     <button id="restart-button" class="hide">Restart</button>
   </div>
